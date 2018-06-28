@@ -517,6 +517,9 @@ footer {
     margin-right: 10px;
     width: 18px;
     height: 18px;
+    text-align: center;
+    font-size: 18px;
+    color: #666666;
 }
 
 .footer__socials svg {
@@ -533,24 +536,24 @@ footer {
     font-size: 12px;
 }
 
-.footer__socials--youtube:hover svg {
-    fill: #FF0000;
+.footer__socials--youtube:hover  {
+    color: #FF0000;
 }
 
-.footer__socials--instagram:hover svg {
-    fill: #bc2a8d;
+.footer__socials--instagram:hover {
+    color: #bc2a8d;
 }
 
-.footer__socials--vk:hover svg {
-    fill: #4a76a8;
+.footer__socials--vk:hover {
+    color: #4a76a8;
 }
 
-.footer__socials--odnoklassniki:hover svg {
-    fill: #ee8208;
+.footer__socials--odnoklassniki:hover {
+    color: #ee8208;
 }
 
-.footer__socials--facebook:hover svg {
-    fill: #29487d;
+.footer__socials--facebook:hover {
+    color: #29487d;
 }
 
 @media (max-width: 1200px) {
@@ -860,7 +863,7 @@ footer {
     background: #4b789f;
     height: 40px;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 26px;
     margin: 0 auto;
 }
 
@@ -948,7 +951,7 @@ footer {
     align-items: center;
     border: 1px solid #f3f3f3;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 .item--type {
@@ -1068,6 +1071,7 @@ footer {
 
 .fastbuy__wrapper {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .fastbuy__wrapper.hidden {
@@ -1137,12 +1141,18 @@ footer {
 .fastbuy__item a {
     margin: 0;
     height: 30px;
+    line-height: 16px;
 }
 
 
 .fastbuy__table {
     flex-grow: 1;
     padding-left: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fastbuy__table .h1 {
@@ -1199,10 +1209,19 @@ footer {
     text-align: center;
     color: #333333;
     cursor: pointer;
+    padding-top: 1px;
 }
 
 .quantity-btn i {
     color: #8a8a8a;
+}
+
+.quantity-minus {
+    border-right: none;
+}
+
+.quantity-plus {
+    border-left: none;
 }
 
 /*FILTER*/
@@ -1257,8 +1276,12 @@ footer {
     cursor: pointer;
 }
 
-.menu__dropdown.active i:before {
+.menu__dropdown.submenu__active i:before {
     content: "\f077";
+}
+
+.submenu {
+    display: none;
 }
 
 
@@ -1304,4 +1327,124 @@ input[type=checkbox].css-checkbox + label.css-label {
 input[type=checkbox].css-checkbox:checked + label.css-label {
     background: url('../image/icons/checked.svg') no-repeat left center;
     background-size: 14px;
+}
+
+
+/*TABLE*/
+
+
+.catalog__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.catalog__table td,
+.catalog__table th {
+    border: 1px solid #95cceb;
+    text-align: center;
+    padding: 5px;
+}
+
+.catalog__table th  {
+    color: #000c41;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.catalog__table td  {
+    color: #666666;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+
+
+/*RANGE*/
+
+
+.range {
+    min-height: 38px;
+    background: #fff;
+}
+
+
+.range__prev,
+    .range__next {
+         font-size: 14px;
+         font-weight: 500;
+         color: #333333;
+         margin: 0 4px;
+         padding: 5px;
+         outline: none;
+         min-width: 66px;
+         max-width: 66px;
+    }
+
+
+@media (min-width: $screen-lg) {
+
+
+.range__prev,
+    .range__next {
+            margin: 0 15px
+    }
+        }
+
+
+.range__input {
+         height: 4px;
+         background: #f3f3f3;
+         width: 100%;
+         margin: 20px 6px 10px;
+         position: relative;
+         text-align: left;
+    }
+
+
+@media (min-width: $screen-xs) {
+
+
+.range__input {
+            width: 200px
+    }
+        }
+
+.ui-slider-handle {
+    height: 12px;
+    width: 4px;
+    top: -4px;
+    background: #4b789f no-repeat center/10px;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+    margin-left: -.2em;
+    position: absolute;
+    touch-action: none;
+}
+
+.ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-color: #4b789f;
+    height: 100%;
+}
+
+.range__wrapper {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.range__label {
+    font-size: 14px;
+    color: #333333;
+}
+
+.submenu__active + .submenu {
+    display: block;
 }

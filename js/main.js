@@ -7,11 +7,7 @@ document.getElementById('closeButton').onclick = function() {
 
 
 
-//Remove focus from inputs etc.
-
-$("button").mouseup(function(){
-    $(this).blur();
-});
+//Hamburger icon
 
 
 
@@ -203,5 +199,11 @@ $(function () {
 $(function () {
     $(".menu__dropdown").on("click", function () {
         return $(this).toggleClass("submenu__active"), !1
+    });
+
+
+    $('#gamburger-nav').click( function () {
+        $(this).toggleClass("active");
+        $('.header__mobile--dropdown').toggleClass("active");
     });
 });

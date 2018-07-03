@@ -559,6 +559,11 @@ footer {
     padding-bottom: 10px;
 }
 
+a.active {
+    color: #000c41;
+    font-weight: 700;
+}
+
 .footer__item--button {
     display: flex;
     flex-wrap: nowrap;
@@ -784,6 +789,7 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    padding: 20px;
 }
 
 .h1 {
@@ -792,6 +798,7 @@ footer {
     font-weight: 700;
     position: relative;
     text-indent: 10px;
+    margin-bottom: 30px;
 }
 
 .h1:before {
@@ -1003,6 +1010,7 @@ footer {
 .breadcrumb {
     background: transparent;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .breadcrumb__item + .breadcrumb__item:before {
@@ -1162,7 +1170,7 @@ footer {
 .fastbuy {
     position: relative;
     width: 100%;
-    height: 210px;
+    min-height: 210px;
     border: 1px solid #85bcdc;
     border-radius: 2px;
     padding: 10px;
@@ -1220,7 +1228,7 @@ footer {
 }
 
 .fastbuy__item a {
-    margin: 0;
+    margin: 10px 0 0;
     height: 30px;
     line-height: 16px;
 }
@@ -1625,11 +1633,33 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
     .hidden-xs {
         display: none;
     }
+
+    .sort__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .fastbuy {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fastbuy__item {
+        width: 100%;
+        align-items: center;margin-bottom: 10px;
+    }
+
+    .newsletter__input {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
 }
 
 /*BLUE TILES*/
 
 
+.tiles {
+    padding-top: 10px;
+}
 
 .tile {
     width: 100%;
@@ -1678,6 +1708,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
     border-top: 1px solid #efefef;
     background: #fff;
     padding: 12px;
+    position: relative;
 }
 
 .tile__link:first-child {
@@ -1691,16 +1722,143 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
     color: #fff;
 }
 
-.tile__link:hover,
-.tile__link:focus,
-.tile__link:active {
+.tile__link i {
+    position: absolute;
+    color: #efefef;
+    right: 12px;
+    top: 12px;
+}
+
+.tile__link:hover i,
+.tile__link:focus i,
+.tile__link:active i {
+    color: #fff;
+}
+
+.tile__link.active {
     background: #4b789f;
     color: #fff;
 }
 
+.tile__link.active i {
+    color: #fff;
+}
 
 .social {
     font-size: 14px;
     text-transform: uppercase;
-    color: #1d1d1d;
+    color: #000c41;
+    margin-bottom: 30px;
+}
+
+.social__head{
+    margin-bottom: 10px;
+}
+
+.socials {
+    min-height: 42px;
+}
+
+.soc {
+    width: 42px;
+    height: 42px;
+    display: block;
+    margin-right: 6px;
+    float: left;
+}
+
+.soc.facebook {
+    background: url("../image/icons/Facebook.svg") no-repeat center/40px;
+}
+
+.soc.google {
+    background: url("../image/icons/Google.svg") no-repeat center/40px;
+}
+
+.soc.twitter {
+    background: url("../image/icons/Twitter.svg") no-repeat center/40px;
+}
+
+.soc.vk {
+    background: url("../image/icons/VKnew.svg") no-repeat center/40px;
+}
+
+.soc.instagram {
+    background: url("../image/icons/Instagram.svg") no-repeat center/36px;
+}
+
+.btn__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input__wrapper {
+    min-height: 40px;
+}
+
+.btn__green {
+    height: 40px;
+    width: 150px;
+    background: #6eba21;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0;
+}
+
+.btn__icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: #599e15 url("../image/icons/white-msg.svg") no-repeat center/20px;
+}
+
+.social .tile {
+    padding: 16px;
+    text-align: left;
+    color: #fff;
+    font-size: 11px;
+    align-items: flex-start;
+}
+
+.social .tile__text {
+    text-align: left;
+}
+
+.social input {
+    background: #f7f9fb;
+}
+
+
+.form-group {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-profile-form-label {
+    color: #000c41;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main-profile-form-buttons-block .btn__blue {
+    display: inline-block;
+    background: #5a90c0;
+    margin-top: 5px;
+}
+
+.main-profile-block-date-info {
+    padding-bottom: 10px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.form-control {
+    background: #fafafa;
+    font-size: 14px;
+    min-height: 40px;
 }

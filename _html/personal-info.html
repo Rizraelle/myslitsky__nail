@@ -98,7 +98,7 @@
                                 <div class="header__search--wrapper">
                                     <input type="text" input[type=reset]
                                            placeholder="Введите часть артикула или кода, например 504" name="search"
-                                           class="header__search--field">
+                                           class="header__search--field" id="autocomplete">
                                     <div class="header__search--dropdown">Все разделы</div>
                                 </div>
                                 <button class="header__search--button"></button>
@@ -197,87 +197,67 @@
 
         <div class="row tiles">
             <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-9">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 tile__wrapper">
-                        <a href="" class="tile">
-                            <div class="tile__image">
-                                <i class="fa fa-calculator"></i>
-                            </div>
-                            <div class="tile__text">
-                                Текущие заказы
-                            </div>
-                        </a>
+                <div class="main-profile-block-shown" id="user_div_reg">
+                    <div class="main-profile-block-date-info">
+                        <div class="col-sm-9 offset-md-5 small">
+                            <strong>Дата обновления:</strong>
+                            <strong>03.07.2018 10:57:24</strong><br>
+                            <strong>Последняя авторизация:</strong>
+                            <strong>03.07.2018 10:57:24</strong>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 tile__wrapper">
-                        <a href="" class="tile">
-                            <div class="tile__image">
-                                <i class="fa fa-credit-card"></i>
-                            </div>
-                            <div class="tile__text">
-                                Личный счет
-                            </div>
-                        </a>
+                    <div class="form-group row">
+                        <label class="main-profile-form-label col-sm-12 col-md-5 text-md-right" for="main-profile-last-name">Фамилия<span class="red">*</span></label>
+                        <div class="col-sm-12 col-md-7">
+                            <input class="form-control" type="text" name="LAST_NAME" maxlength="50" id="main-profile-last-name" value="">
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 tile__wrapper">
-                        <a href="" class="tile">
-                            <div class="tile__image">
-                                <i class="fa fa-user-secret"></i>
-                            </div>
-                            <div class="tile__text">
-                                Личные данные
-                            </div>
-                        </a>
+                    <div class="form-group row">
+                        <label class="main-profile-form-label col-sm-12 col-md-5 text-md-right" for="main-profile-name">Имя<span class="red">*</span></label>
+                        <div class="col-sm-12 col-md-7">
+                            <input class="form-control" type="text" name="NAME" maxlength="50" id="main-profile-name" value="">
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 tile__wrapper">
-                        <a href="" class="tile">
-                            <div class="tile__image">
-                                <i class="fa fa-list-alt"></i>
-                            </div>
-                            <div class="tile__text">
-                                История заказов
-                            </div>
-                        </a>
+                    <div class="form-group row">
+                        <label class="main-profile-form-label col-sm-12 col-md-5 text-md-right" for="main-profile-second-name">Отчество</label>
+                        <div class="col-sm-12 col-md-7">
+                            <input class="form-control" type="text" name="SECOND_NAME" maxlength="50" id="main-profile-second-name" value="">
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 tile__wrapper">
-                        <a href="" class="tile">
-                            <div class="tile__image">
-                                <i class="fa fa-list-ol"></i>
-                            </div>
-                            <div class="tile__text">
-                                Профили заказов
-                            </div>
-                        </a>
+                    <div class="form-group row">
+                        <label class="main-profile-form-label col-sm-12 col-md-5 text-md-right" for="main-profile-email">Телефон<span class="red">*</span></label>
+                        <div class="col-sm-12 col-md-7">
+                            <input class="form-control" type="text" name="PHONE" maxlength="50" id="main-profile-phone" value="+7 (999) 999 99 99">
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 tile__wrapper">
-                        <a href="" class="tile">
-                            <div class="tile__image">
-                                <i class="fa fa-shopping-cart"></i>
-                            </div>
-                            <div class="tile__text">
-                                Корзина
-                            </div>
-                        </a>
+                    <div class="form-group row">
+                        <label class="main-profile-form-label col-sm-12 col-md-5 text-md-right" for="main-profile-email">E-Mail<span class="red">*</span></label>
+                        <div class="col-sm-12 col-md-7">
+                            <input class="form-control" type="text" name="EMAIL" maxlength="50" id="main-profile-email" value="support@bitrix.ru">
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 tile__wrapper">
-                        <a href="" class="tile">
-                            <div class="tile__image">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="tile__text">
-                                Подписки
-                            </div>
-                        </a>
+                    <div class="form-group row">
+                        <p class="main-profile-form-password-annotation col-sm-6 offset-md-5 small">
+                            Пароль должен быть не менее 6 символов длиной.					</p>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 tile__wrapper">
-                        <a href="" class="tile">
-                            <div class="tile__image">
-                                <i class="fa fa-info-circle"></i>
-                            </div>
-                            <div class="tile__text">
-                                Контакты
-                            </div>
-                        </a>
+                    <div class="form-group row">
+                        <label class="main-profile-form-label col-sm-12 col-md-5 text-md-right" for="main-profile-password">Новый пароль</label>
+                        <div class="col-sm-12 col-md-7">
+                            <input class=" form-control bx-auth-input main-profile-password" type="password" name="NEW_PASSWORD" maxlength="50" id="main-profile-password" value="" autocomplete="off">
+                        </div>
                     </div>
+                    <div class="form-group row">
+                        <label class="main-profile-form-label main-profile-password col-sm-12 col-md-5 text-md-right" for="main-profile-password-confirm">
+                            Подтверждение нового пароля					</label>
+                        <div class="col-sm-12 col-md-7">
+                            <input class="form-control" type="password" name="NEW_PASSWORD_CONFIRM" maxlength="50" value="" id="main-profile-password-confirm" autocomplete="off">
+                        </div>
+                    </div>
+                    <p class="main-profile-form-buttons-block col-sm-12 col-md-7 offset-md-5">
+                        <input type="submit" name="save" class="btn btn-themes btn-default btn-md main-profile-submit btn__blue" value="Сохранить">
+                        &nbsp;
+                        <input type="submit" class="btn btn-themes btn-default btn-md btn__blue" name="reset" value="Отмена">
+                    </p>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">

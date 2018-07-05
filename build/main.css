@@ -83,6 +83,7 @@ body {
     background-color: #FFF;
     font-family: 'Roboto', sans-serif;
     line-height: 1.15;
+    position: relative;
 }
 
 *, *:before, *:after {
@@ -657,6 +658,7 @@ a.active {
 
 .container__padded {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .main__button {
@@ -757,6 +759,12 @@ a.active {
     padding-bottom: 6px;
 }
 
+.catalog__category:hover,
+.catalog__category:focus,
+.catalog__category:active {
+    box-shadow: 0 0 20px rgba(51, 51, 51, 0.35), 0 0 10px rgba(51, 51, 51, 0.2);
+}
+
 .catalog__category--image {
     width: 100%;
     height: 180px;
@@ -847,6 +855,7 @@ a.active {
     align-items: center;
     width: 100%;
     height: 100%;
+    margin-bottom: 10px;
 }
 
 .main__input {
@@ -1445,6 +1454,14 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
     color: #666666;
     font-size: 10px;
     font-weight: 300;
+}
+
+.catalog__table td.active {
+    background: #e7f1f6;
+}
+
+tr.active td {
+    background: #e7f1f6;
 }
 
 
@@ -2051,4 +2068,130 @@ a.instagram.soc:after {
     content: '';
     display: block;
     clear: both;
+}
+
+/*MODAL*/
+
+
+.main__modal--wrapper {
+    max-width: 400px;
+    position: absolute;
+    top: 150px;
+    right: 25%;
+}
+
+.main__modal {
+    position: relative;
+    border: 1px solid #85bcdc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.main__label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000c41;
+    margin-right: 10px;
+}
+
+.main__link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000c41;
+    text-decoration: underline;
+}
+
+.main__input--wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+
+/*PAGINATION*/
+
+
+.pagination__wrapper {
+    text-align: right;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.pagination__item {
+    display: inline;
+    list-style-type: none;
+    margin: 0 9px;
+}
+
+.pagination__link {
+    font-size: 14px;
+    color: #999999;
+}
+
+.pagination__link.active {
+    color: #4b789f;
+    font-weight: 700;
+}
+
+.pagination__link i {
+    font-size: 12px;
+}
+
+
+/*LIGHTBLUE TILES*/
+
+
+.lightblue__tile--wrapper {
+    padding-bottom: 20px;
+}
+
+
+.lightblue__tile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: #ebf6ff;
+    border: 1px solid #bde0ff;
+    border-radius: 2px;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000c41;
+    margin-top: 10px;
+    height: 100%;
+    min-height: 150px;
+}
+
+.lightblue__tile--image {
+    height: 100%;
+    width: 100%;
+}
+
+.lightblue__head {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000c41;
+}
+
+.lightblue__red {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fe3f40;
+}
+
+.lightblue__part {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333333;
 }

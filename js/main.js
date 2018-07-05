@@ -1,12 +1,3 @@
-//Close button
-
-
-document.getElementById('closeButton').onclick = function() {
-    document.getElementsByClassName('fastbuy__wrapper')[0].classList.add("hidden");
-}
-
-
-
 //Hamburger icon
 
 

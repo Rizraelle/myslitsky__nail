@@ -21,7 +21,11 @@
     <div class="header__menu--line">
         <div class="container">
             <div class="header__inner row">
-                <div class="col-xs-12 col-lg-2">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <a class="gamburger js-gamburger js-run-event" title="Меню" tabindex="0" role="button" id="gamburger-nav">
+                        <div class="gamburger__line">
+                        </div>
+                    </a>
                     <a href="" class="header__logo">
                         <div class="header__logo--svg">
                         </div>
@@ -30,9 +34,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12 col-lg-10 header__content">
-                    <div class="row header__underline">
-                        <div class="col-xs-12 col-lg-3 el__centered">
+                <div class="col-6 col-sm-8 col-md-9 col-lg-9 col-xl-10 header__content">
+                    <div class="row header__underline header__mobile--dropdown">
+                        <div class="col-12 col-lg-3 el__centered">
                             <div class="header__city">
                                 <div class="header__city--icon">
                                     <i class="fas fa-map-marker-alt"></i>
@@ -45,7 +49,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-lg-4">
+                        <div class="col-12 col-lg-4">
                             <div class="header__info">
                                 <div class="header__info--delivery">
                                     <span>Бесплатная</span> доставка от 2 000 <i class="fas fa-ruble-sign"></i>
@@ -66,7 +70,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-lg-3 header__call">
+                        <div class="col-12 col-lg-3 header__call">
                             <div class="header__call--icon">
                                 <img src="../image/icons/phone-call.svg" alt="Звонок" title="Позвонить">
                             </div>
@@ -79,7 +83,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-lg-1 header__region">
+                        <div class="col-12 col-lg-2 header__region">
                             <div class="header__region--item">
                                 <a href="" title="Русский">
                                     <img src="../image/icons/russia.svg">
@@ -93,7 +97,7 @@
                         </div>
                     </div>
                     <div class="row header__margin">
-                        <div class="col-xs-12 col-lg-7 el__centered">
+                        <div class="col-12 col-sm-8 col-md-5 col-lg-7 el__centered hidden-xs">
                             <div class="header__search">
                                 <div class="header__search--wrapper">
                                     <input type="text" input[type=reset]
@@ -104,7 +108,7 @@
                                 <button class="header__search--button"></button>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-lg-3 header__personal">
+                        <div class="col-12 col-md-4 col-lg-3 header__personal hidden-sm">
                             <a href="" class="header__personal--comparison">
                                 <div class="header__personal--icon"></div>
                                 <div class="header__personal--text">
@@ -124,7 +128,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-xs-12 col-lg-2 el__centered">
+                        <div class="col-12 col-sm-4 col-md-3 col-lg-2 el__centered">
                             <a href="" class="header__cart">
                                 <div class="header__cart--icon">
                                 </div>
@@ -146,37 +150,37 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="header__catalog">
-        <div class="container">
-            <div class="row header__catalog--row">
-                <a href="" class="header__catalog--item">
-                    <span><i class="fas fa-bars"></i></span> <span>Все разделы</span>
-                </a>
-                <a href="" class="header__catalog--item">
-                    Вращающиеся инструменты
-                </a>
-                <a href="" class="header__catalog--item">
-                    Пилки и полировщики
-                </a>
-                <a href="" class="header__catalog--item">
-                    Инструменты для маникюра
-                </a>
-                <a href="" class="header__catalog--item">
-                    Уход за руками и ногами
-                </a>
-                <a href="" class="header__catalog--item">
-                    Гель лаки
-                </a>
-                <a href="" class="header__catalog--item">
-                    Дизайн ногтей
-                </a>
-                <a href="" class="header__catalog--item">
-                    Наращивание ногтей
-                </a>
-                <a href="" class="header__catalog--item">
-                    Оборудование
-                </a>
+        <div class="header__catalog">
+            <div class="container">
+                <div class="row header__catalog--row">
+                    <a href="" class="header__catalog--item">
+                        <span><i class="fas fa-bars"></i></span> <span>Все разделы</span>
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Вращающиеся инструменты
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Пилки и полировщики
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Инструменты для маникюра
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Уход за руками и ногами
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Гель лаки
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Дизайн ногтей
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Наращивание ногтей
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Оборудование
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -196,6 +200,248 @@
             Личный счет
         </div>
         <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-9">
+                <div class="sale-personal-account-wallet-container">
+                    <div class="sale-personal-account-wallet-title">
+                        СОСТОЯНИЕ СЧЕТА НА		09.07.2018	</div>
+                    <div class="sale-personal-account-wallet-list-container">
+                        <div class="sale-personal-account-wallet-list">
+                            <div class="sale-personal-account-wallet-list-item">
+                                <div class="sale-personal-account-wallet-sum">0 руб.</div>
+                                <div class="sale-personal-account-wallet-currency">
+                                    <div class="sale-personal-account-wallet-currency-item">RUB</div>
+                                    <div class="sale-personal-account-wallet-currency-item">Рубль</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>	<h3 class="sale-personal-section-account-sub-header">
+                Пополнение счета	</h3>
+                <div class="bx-sap" id="bx-sapYt0znOOoTj">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 sale-acountpay-block">
+                                <h3 class="sale-acountpay-title">Фиксированный платёж</h3>
+                                <div class="sale-acountpay-fixedpay-container">
+                                    <div class="sale-acountpay-fixedpay-list">
+                                        <div class="sale-acountpay-fixedpay-item">
+                                            100											</div>
+                                        <div class="sale-acountpay-fixedpay-item">
+                                            200											</div>
+                                        <div class="sale-acountpay-fixedpay-item">
+                                            500											</div>
+                                        <div class="sale-acountpay-fixedpay-item">
+                                            1000											</div>
+                                        <div class="sale-acountpay-fixedpay-item">
+                                            5000											</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 sale-acountpay-block form-horizontal">
+                                <h3 class="sale-acountpay-title">Сумма</h3>
+                                <div class="" style="max-width: 200px;">
+                                    <div class="form-group" style="margin-bottom: 0;">
+
+                                        <div class="col-sm-9">
+                                            <input type="text" placeholder="0.00" class="form-control input-lg sale-acountpay-input" value="0.00" name="buyMoney">
+                                        </div> <label class="control-label input-lg input-lg col-sm-3">руб.</label>								</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 sale-acountpay-block">
+                                <h3 class="sale-acountpay-title">Метод оплаты</h3>
+                                <div>
+                                    <div class="sale-acountpay-pp row">
+                                        <div class="col-md-7 col-sm-8 col-xs-12 ">
+                                            <div class="sale-acountpay-pp-company col-lg-3 col-sm-4 col-xs-6 bx-selected">
+                                                <div class="sale-acountpay-pp-company-graf-container">
+                                                    <input type="checkbox" class="sale-acountpay-pp-company-checkbox" name="PAY_SYSTEM_ID" value="3" checked="checked">
+                                                    <div class="sale-acountpay-pp-company-image" style="
+															background-image: url(/upload/sale/paysystem/logotip/541/541cf97ad1bdc5c68681688091162436.png);
+															background-image: -webkit-image-set(url(/upload/sale/paysystem/logotip/541/541cf97ad1bdc5c68681688091162436.png) 1x, url(/upload/sale/paysystem/logotip/541/541cf97ad1bdc5c68681688091162436.png) 2x);">
+                                                    </div>
+                                                </div>
+                                                <div class="sale-acountpay-pp-company-smalltitle">
+                                                    Яндекс.Деньги											</div>
+                                            </div>
+                                            <div class="sale-acountpay-pp-company col-lg-3 col-sm-4 col-xs-6 ">
+                                                <div class="sale-acountpay-pp-company-graf-container">
+                                                    <input type="checkbox" class="sale-acountpay-pp-company-checkbox" name="PAY_SYSTEM_ID" value="4">
+                                                    <div class="sale-acountpay-pp-company-image" style="
+															background-image: url(/upload/sale/paysystem/logotip/535/535c73bd710a7d8b7fad866ac8a38799.png);
+															background-image: -webkit-image-set(url(/upload/sale/paysystem/logotip/535/535c73bd710a7d8b7fad866ac8a38799.png) 1x, url(/upload/sale/paysystem/logotip/535/535c73bd710a7d8b7fad866ac8a38799.png) 2x);">
+                                                    </div>
+                                                </div>
+                                                <div class="sale-acountpay-pp-company-smalltitle">
+                                                    Банковские карты											</div>
+                                            </div>
+                                            <div class="sale-acountpay-pp-company col-lg-3 col-sm-4 col-xs-6 ">
+                                                <div class="sale-acountpay-pp-company-graf-container">
+                                                    <input type="checkbox" class="sale-acountpay-pp-company-checkbox" name="PAY_SYSTEM_ID" value="5">
+                                                    <div class="sale-acountpay-pp-company-image" style="
+															background-image: url(/upload/sale/paysystem/logotip/a2e/a2e45ef682aab205c812e9aaa8d5fb0b.png);
+															background-image: -webkit-image-set(url(/upload/sale/paysystem/logotip/a2e/a2e45ef682aab205c812e9aaa8d5fb0b.png) 1x, url(/upload/sale/paysystem/logotip/a2e/a2e45ef682aab205c812e9aaa8d5fb0b.png) 2x);">
+                                                    </div>
+                                                </div>
+                                                <div class="sale-acountpay-pp-company-smalltitle">
+                                                    Терминалы											</div>
+                                            </div>
+                                            <div class="sale-acountpay-pp-company col-lg-3 col-sm-4 col-xs-6 ">
+                                                <div class="sale-acountpay-pp-company-graf-container">
+                                                    <input type="checkbox" class="sale-acountpay-pp-company-checkbox" name="PAY_SYSTEM_ID" value="1">
+                                                    <div class="sale-acountpay-pp-company-image" style="
+															background-image: url(/upload/sale/paysystem/logotip/a33/a33ee0c9adef0f1b4d5680a056b799be.png);
+															background-image: -webkit-image-set(url(/upload/sale/paysystem/logotip/a33/a33ee0c9adef0f1b4d5680a056b799be.png) 1x, url(/upload/sale/paysystem/logotip/a33/a33ee0c9adef0f1b4d5680a056b799be.png) 2x);">
+                                                    </div>
+                                                </div>
+                                                <div class="sale-acountpay-pp-company-smalltitle">
+                                                    Наличные курьеру											</div>
+                                            </div>
+                                            <div class="sale-acountpay-pp-company col-lg-3 col-sm-4 col-xs-6 ">
+                                                <div class="sale-acountpay-pp-company-graf-container">
+                                                    <input type="checkbox" class="sale-acountpay-pp-company-checkbox" name="PAY_SYSTEM_ID" value="2">
+                                                    <div class="sale-acountpay-pp-company-image" style="
+															background-image: url(/upload/sale/paysystem/logotip/161/161c70f8e584abe152df3cf0ed245cf8.png);
+															background-image: -webkit-image-set(url(/upload/sale/paysystem/logotip/161/161c70f8e584abe152df3cf0ed245cf8.png) 1x, url(/upload/sale/paysystem/logotip/161/161c70f8e584abe152df3cf0ed245cf8.png) 2x);">
+                                                    </div>
+                                                </div>
+                                                <div class="sale-acountpay-pp-company-smalltitle">
+                                                    Наложенный платеж											</div>
+                                            </div>
+                                            <div class="sale-acountpay-pp-company col-lg-3 col-sm-4 col-xs-6 ">
+                                                <div class="sale-acountpay-pp-company-graf-container">
+                                                    <input type="checkbox" class="sale-acountpay-pp-company-checkbox" name="PAY_SYSTEM_ID" value="7">
+                                                    <div class="sale-acountpay-pp-company-image" style="
+															background-image: url(/upload/sale/paysystem/logotip/ba4/ba438e2034addf05eb56a6cdb13e413e.png);
+															background-image: -webkit-image-set(url(/upload/sale/paysystem/logotip/ba4/ba438e2034addf05eb56a6cdb13e413e.png) 1x, url(/upload/sale/paysystem/logotip/ba4/ba438e2034addf05eb56a6cdb13e413e.png) 2x);">
+                                                    </div>
+                                                </div>
+                                                <div class="sale-acountpay-pp-company-smalltitle">
+                                                    Сбербанк											</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <a href="" class="btn btn-default btn-lg sale-account-pay-button">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar col-md-3 col-sm-4">
+
+                    <div class="bx-sidebar-block">
+
+                    </div>
+                    <div class="bx-sidebar-block">
+                        <div class="bx-socialsidebar">
+                            <div class="bx-block-title">МЫ В СОЦСЕТЯХ</div>
+                            <div class="bx-socialsidebar-group">
+                                <ul>
+                                    <li><a class="fb bx-socialsidebar-icon" target="_blank" href="https://www.facebook.com/1CBitrix"></a></li>
+                                    <li><a class="gp bx-socialsidebar-icon" target="_blank" href="https://plus.google.com/111119180387208976312/"></a></li>
+                                    <li><a class="tw bx-socialsidebar-icon" target="_blank" href="https://twitter.com/1c_bitrix"></a></li>
+                                    <li><a class="vk bx-socialsidebar-icon" target="_blank" href="https://vk.com/bitrix_1c"></a></li>
+                                    <li><a class="in bx-socialsidebar-icon" target="_blank" href="https://instagram.com/1CBitrix/"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bx-sidebar-block hidden-xs">
+                    </div>
+
+                    <div class="bx-sidebar-block">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
+                <div class="links">
+                    <a href="" class="tile__link active">
+                        Мой кабинет
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="" class="tile__link">
+                        Мой кабинет
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="" class="tile__link">
+                        Мой кабинет
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="" class="tile__link">
+                        Мой кабинет
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="" class="tile__link">
+                        Мой кабинет
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="" class="tile__link">
+                        Мой кабинет
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="" class="tile__link">
+                        Мой кабинет
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="social">
+                    <div class="social__head">Мы в соцсетях</div>
+                    <div class="socials">
+                        <a href="" class="facebook soc" target="_blank"></a>
+                        <a href="" class="google soc" target="_blank"></a>
+                        <a href="" class="twitter soc" target="_blank"></a>
+                        <a href="" class="vk soc" target="_blank"></a>
+                        <a href="" class="instagram soc" target="_blank"></a>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="social__head">Рассылка</div>
+                    <div class="input__wrapper">
+                        <input type="text" class="main__input" placeholder="Введите email" required="" name="EMAIL" value="">
+                    </div>
+
+                    <a href="" class="btn__wrapper">
+                        <button class="btn btn__green">Подписаться
+                        </button>
+                        <span class="btn__icon"></span>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="" class="tile">
+                        <div class="tile__text">
+                            Почему мы?
+                        </div>
+                        <div class="tile__text--small">
+                            <i class="fas fa-check"></i> Выполнили свыше 150 000 заказов
+                        </div>
+                        <div class="tile__text--small">
+                            <i class="fas fa-check"></i> Более 10 лет успешной работы
+                        </div>
+                        <div class="tile__text--small">
+                            <i class="fas fa-check"></i> Более 50 000 тысяч покупателей
+                        </div>
+                        <div class="tile__text--small">
+                            <i class="fas fa-check"></i> Контракты с домами мод
+                        </div>
+                        <div class="tile__text--small">
+                            <i class="fas fa-check"></i> Оригинальные модели
+                        </div>
+                        <div class="tile__text--small">
+                            <i class="fas fa-check"></i> Круглосуточная поддержка
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 

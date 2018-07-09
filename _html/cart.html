@@ -188,171 +188,243 @@
 <!-- HEADER END -->
 
 <main class="main">
-    <div class="container container__padded">
 
+    <div class="container container__padded">
         <ol class="breadcrumb">
             <li class="breadcrumb__item"><a class="breadcrumb__link" href="/" title="Главная">Главная</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="" title="Статьи">Доставка</a>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="" title="Статьи">Корзина</a>
             </li>
         </ol>
-        <div class="h1">
-            Доставка
-        </div>
-
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <img src="../image/icons/Postomat.svg" class="lightblue__tile--image lightblue__postamat" alt="Postamat" title=""/>
+            <div class="col-12">
+                <div class="h1">
+                    Корзина <span class="steps">1/4</span>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__head">
-                        Пункт выдачи или постамат
+                <div>
+                    <div class="cart__wrapper">
+                        <table class="cart__table">
+                            <tbody>
+                            <thead>
+                            <th>
+                                Фото
+                            </th>
+                            <th>
+                                Краткое описание
+                            </th>
+                            <th>
+                                Количество
+                            </th>
+                            <th>
+                                Скидка
+                            </th>
+                            <th>
+                                Сумма
+                            </th>
+                            <th>
+                                Удалить
+                            </th>
+                            </thead>
+                            <tr>
+                                <td class="item__image">
+                                    <div class="catalog__item--image" style="background: url('../image/img/catalog.jpg') no-repeat center center;background-size: 100%;">
+                                        <div class="catalog__item--brand" style="background: url('../image/img/article.jpg') no-repeat center center;background-size: cover;"></div>
+                                        <div class="catalog__item--country" style="background: url('../image/icons/united-kingdom.svg') no-repeat center center;background-size: cover;"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="text__darkblue">
+                                            Насадка алмазная 805 704 603
+                                        </div>
+                                        <div class="info__item">
+                                            <span>Материал: </span> Алмаз
+                                        </div>
+                                        <div class="info__item">
+                                            <span>Обороты: </span> 18 000 об/мин
+                                        </div>
+                                        <div class="info__item">
+                                            <span>Степень обработки: </span> грубая
+                                        </div>
+                                        <div class="info__item">
+                                            <span>Диаметр: </span> 16 мм
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="fastbuy__item--quantity">
+                                        <div class="quantity-btn quantity-minus"><i class="fas fa-minus"></i></div>
+                                        <input class="quantity" name="quantity" id="quantity" placeholder="2 шт."/>
+                                        <label for="quantity"></label>
+                                        <div class="quantity-btn quantity-plus"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                    <div class="text__darkblue">
+                                        Сумма <span class="text__lightblue">с учетом скидки</span>: 1234 <i class="fas fa-ruble-sign"></i>
+                                    </div>
+                                    <div class="info__text">
+                                        При покупке от 15 шт. - 95 <i class="fas fa-ruble-sign"></i><br>
+                                        <a href="" class="link__darkgray">Подробнее о системе скидок</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text__darkblue text__centered">
+                                        23 <i class="fas fa-ruble-sign"></i>/шт.
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text__lightblue text__centered">
+                                        264 <i class="fas fa-ruble-sign"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text__centered">
+                                        <a href=""><i class="fas fa-plus delete"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="lightblue__part">
-                        <span class="lightblue__red">От 2000 руб - бесплатно</span> *
-                    </div>
-                    <div class="lightblue__part">
-                        <span class="lightblue__red">До 2000 руб - 350 руб</span>
-                    </div>
-                    <div class="lightblue__part">
-                        Сумма минимального заказа может меняться в зависимости от вашего региона
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__tile--text">
-                        Сроки доставки зависят от региона. Более подробную информацию вы получите при оформлении заказа и
-                        после подтверждения заказа менеджером.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <img src="../image/icons/Kuryer.svg" class="lightblue__tile--image lightblue__postamat" alt="Postamat" title=""/>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__head">
-                        Курьер
-                    </div>
-                    <div class="lightblue__part">
-                        <span class="lightblue__red">От 5000 руб - бесплатно</span><br>
-                        ( Только Москва, МО, Санкт-Петербург )
-                    </div>
-                    <div class="lightblue__part">
-                        <span class="lightblue__red">От 1000 руб - доставка от 350 руб</span><br>
-                        ( Все регионы России )
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__tile--text">
-                        Сроки доставки зависят от региона. Более подробную информацию вы получите при оформлении заказа и
-                        после подтверждения заказа менеджером.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <img src="../image/icons/Samovivoz.svg" class="lightblue__tile--image lightblue__postamat" alt="Postamat" title=""/>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__head">
-                        Самовывоз
-                    </div>
-                    <div class="lightblue__part">
-                        <span class="lightblue__red">Бесплатно от 1000 руб</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__tile--text">
-                        125130, Москва, Бизнес-Центр «Старопетровский»,<br>
-                        Старопетровский проезд, д.7А, строение 6, офис 307.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <img src="../image/icons/Dostavka%20RF.svg" class="lightblue__tile--image lightblue__postamat" alt="Postamat" title=""/>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__head">
-                        Доставка по России
-                    </div>
-                    <div class="lightblue__part">
-                        (Там где нет пунктов выдачи)
-                    </div>
-                    <div class="lightblue__part">
-                        <span class="lightblue__red">До 2 000 руб - доставка 350 руб</span>
-                    </div>
-                    <div class="lightblue__part">
-                        <span class="lightblue__red">От 2 000 руб - доставка 250 руб</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__tile--text">
-                        Заказ будет отправлен только после получения оплаты. Отправка почты по вторникам и пятницам. Сроки доставки - от 1 до 14 рабочих дней, в зависимости от региона.
-                        После отправки заказа менеджер отправляет Вам на электронную почту трек-номер для отслеживания посылки.<br>
-                        <a href="" class="text__link">https://www.pochta.ru/TRACKING</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <img src="../image/icons/Drugie%20Strany.svg" class="lightblue__tile--image lightblue__postamat" alt="Postamat" title=""/>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__head">
-                        Другие страны
-                    </div>
-                    <div class="lightblue__part">
-                        ( EMS Почта России )
-                    </div>
-                    <div class="lightblue__part">
-                        Армения, Белоруссия, Казахстан, Киргизия<br><span class="red">- доставка 999 руб</span>
-                    </div>
-                    <div class="lightblue__part">
-                        Азербайджан, Молдова, Таджикистан, Узбекистан, Туркменистан, Украина<br><span class="red">- доставка 1299 руб</span>
-                    </div>
-                    <div class="lightblue__part">
-                        Другие страны - <span class="red">доставка 1999 руб</span>
+                    <div class="cart__wrapper cart__next">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="cart__text">
+                                    Для увеличения скидки нужно добавить в корзину товаров еще на 3 000 рублей.
+                                </div>
+                                <div class="cart__padded">
+                                    <div class="newsletter__input">
+                                        <div class="cart__input--wrapper">
+                                            <input type="text" input[type=reset] placeholder="Введите промокод" name="mail" class="main__input">
+                                            <a href="#" data-toggle="tooltip" title="Some tooltip text!" data-placement="top" class="tooltip__trigger">?</a>
+                                        </div>
+                                        <a href="" class="btn cart__button">Применить промокод</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="cart__right">
+                                    <div class="items__info">
+                                        <div class="text__darkblue">
+                                            Товаров на: <span>1 800 <i class="fas fa-ruble-sign"></i></i></span>
+                                        </div>
+                                        <div class="text__darkblue">
+                                            Скидка: <span>1 800 <i class="fas fa-ruble-sign"></i></span>
+                                        </div>
+                                        <div class="text__lightblue">
+                                            Итого: <span>1 800 <i class="fas fa-ruble-sign"></i></span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn cart__button--blue">Выбрать способ доставки</a>
+                                    <a href="" class="btn cart__button">или заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6 lightblue__tile--wrapper">
-                <div class="lightblue__tile">
-                    <div class="lightblue__tile--text">
-                        Сроки доставки - от 1 до 14 рабочих дней, в зависимости от региона. После отправки заказа менеджер
-                        отправляет Вам на электронную почту трек-номер для отслеживания посылки.<br>
-                        <a href="" class="text__link">https://www.pochta.ru/TRACKING</a>
+                <div class="h1">
+                    Доставка <span class="steps">2/4</span>
+                </div>
+                <div class="wrap">
+                    <div class="wrapper">
+                        <div class="text__darkblue text__darkblue--18">Великие Луки <i class="fas fa-map-marker-alt"></i> <a href="" class="location__change">изменить город</a></div>
+                        <div class="gray__text--small">Цена</div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="checkbox__wrapper">
+                            <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                            <label for="11" class="css-label lite-orange-check text__darkblue">Курьерская доставка <span class="text__darkblue--small">( 3-5 рабочих дней )</span></label>
+                            <a href="#" data-toggle="tooltip" title="Some tooltip text!" data-placement="top" class="tooltip__trigger">?</a>
+                        </div>
+                        <div class="darkblue__text--small">365 <i class="fas fa-ruble-sign"></i></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="checkbox__wrapper">
+                            <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                            <label for="11" class="css-label lite-orange-check text__darkblue">Почта России <span class="text__darkblue--small">( 9-13 рабочих дней )</span></label>
+                        </div>
+                        <div class="darkblue__text--small">457 <i class="fas fa-ruble-sign"></i></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="checkbox__wrapper">
+                            <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                            <label for="11" class="css-label lite-orange-check text__darkblue">
+                                Пункты самовывоза <span class="text__darkblue--small">( 2 рабочих дня )</span>
+                                <a href="" class="location__change">изменить город</a>
+                            </label>
+                            <a href="#" data-toggle="tooltip" title="Some tooltip text!" data-placement="top" class="tooltip__trigger">?</a>
+                        </div>
+                        <div class="darkblue__text--small">245 <i class="fas fa-ruble-sign"></i></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="checkbox__wrapper">
+                            <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                            <label for="11" class="css-label lite-orange-check text__darkblue">Доставка по миру</label>
+                            <a href="#" data-toggle="tooltip" title="Some tooltip text!" data-placement="top" class="tooltip__trigger">?</a>
+                        </div>
+                        <div class="darkblue__text--small">от 350 <i class="fas fa-ruble-sign"></i></div>
                     </div>
                 </div>
+                <div class="h1">
+                    Оплата <span class="steps">3/4</span>
+                </div>
+                <div class="wrap">
+                    <div class="wrapper">
+                        <div class="checkbox__wrapper">
+                            <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                            <label for="11" class="css-label lite-orange-check text__darkblue">Наличными при получении</label>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="checkbox__wrapper">
+                            <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                            <label for="11" class="css-label lite-orange-check text__darkblue">
+                                Онлайн оплата на сайте
+                                <span class="text__darkblue--small">
+                                    ( Visa, Master Card, МИР, QIWI, Яндекс.Деньги, мобильный платеж )
+                                </span>
+                            </label>
+                        </div>
+                        <div class="darkblue__text--small">Visa</div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="checkbox__wrapper">
+                            <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                            <label for="11" class="css-label lite-orange-check text__darkblue">Оплата по счету</label>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn cart__button--blue free__button">Итого с учетом доставки 6 300 <i class="fas fa-ruble-sign"></i></a>
+                <div class="h1">
+                    Ваши данные <span class="steps">4/4</span>
+                </div>
+                <div class="wrap wrap__background">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="cart__input--wrapper wrapper__wide">
+                                <label class="darkblue__text--small label">Имя*</label>
+                                <input type="text" input[type=reset] placeholder="Введите имя" name="mail" class="main__input">
+                            </div>
+                            <div class="cart__input--wrapper wrapper__wide">
+                                <label class="darkblue__text--small label">Телефон*</label>
+                                <input type="text" input[type=reset] placeholder="Введите телефон" name="mail" class="main__input">
+                            </div>
+                            <div class="cart__input--wrapper wrapper__wide">
+                                <label class="darkblue__text--small label">Email*</label>
+                                <input type="text" input[type=reset] placeholder="Введите email" name="mail" class="main__input">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="cart__input--wrapper wrapper__wide wrapper__textarea">
+                                <label class="darkblue__text--small label">Комментарии к заказу</label>
+                                <textarea placeholder="Введите email" class="textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn cart__button--blue free__button">Оформить заказ</a>
             </div>
         </div>
     </div>
+
     <div class="promo__banner"
          style="background: url('../image/img/manicure.jpg') no-repeat center;background-size: 100%;">
         <div class="container">
@@ -375,22 +447,6 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="main__text">
-            <div class="h1">
-                Интернет-магазин профессионального оборудования для маникюра и педикюра
-            </div>
-            В интернет-магазине профессионального маникюра и педикюра Myslitsky-Nail представлено все, что может
-            понадобиться для создания красоты рук и ног. Каждый мастер знает, что качественный профессиональный
-            инструмент – это залог успеха любой косметической процедуры. Кстати, в нашем интернет-магазине представлен
-            широкий ассортимент аппаратуры, которая подойдет и для применения непрофессионалами в домашних условиях –
-            для тех дам, которые предпочитают делать педикюр и маникюр дома самостоятельно, не тратя деньги и время на
-            посещение салонов, и хотят купить аппарат для маникюра и педикюра для самостоятельного использования. Ну и,
-            конечно, специалисты в салонах и частные мастера не могут обойтись без профессионального инструмента для
-            аппаратного маникюра и педикюра. Купить все необходимое оборудование можно в нашей компании как оптом, так и
-            в единичном экземпляре.
-        </div>
-    </div>
 </main>
 
 

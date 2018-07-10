@@ -967,9 +967,17 @@ a.active {
     font-size: 14px;
     line-height: 26px;
     margin: 0 auto;
+    border: none;
 }
 
-/*ARTICLES*/
+.btn__blue:hover,
+.btn__blue:active,
+.btn__bluefocus {
+    outline: none;
+    border: none;
+}
+
+    /*ARTICLES*/
 
 
 .main__item--wrapper {
@@ -2120,6 +2128,20 @@ a.instagram.soc:after {
     margin-top: 10px;
 }
 
+.modal__main {
+    border: 1px solid #85bcdc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.modal__main .modal-header {
+    width: 100%;
+    border: none;
+}
 
 /*PAGINATION*/
 
@@ -2485,4 +2507,187 @@ a.instagram.soc:after {
 
 .wrapper__textarea {
     height: 100%;
+}
+
+.sale-personal-account-wallet-container {
+    width: 100%;
+    max-width: 430px;
+    margin-bottom: 20px;
+    border: 1px solid #95cceb;
+    border-radius: 3px;
+}
+
+.sale-personal-account-wallet-title {
+    background-color: #95cceb;
+    color: #000033;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 11px 17px;
+}
+
+.sale-personal-account-wallet-list-container {
+    background-color: #d9e9f1;
+    color: #000033;
+}
+
+.sale-personal-account-wallet-list-item {
+    position: relative;
+    padding: 11px 17px 12px 17px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.sale-personal-account-wallet-sum {
+    display: inline-block;
+    float: right;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.sale-personal-account-wallet-currency {
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: middle;
+    color: #999999;
+}
+
+.sale-acountpay-title {
+    font-size: 20px;
+    color: #000033;
+}
+
+.sale-acountpay-block {
+    margin-bottom: 10px;
+}
+
+.sale-acountpay-title {
+    font-size: 14px;
+    color: #000033;
+}
+
+.sale-acountpay-fixedpay-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sale-acountpay-fixedpay-list .sale-acountpay-fixedpay-item {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    background: #d1e4ee;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    color: #000033;
+    font-size: 13px;
+    min-width: 55px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    padding: 0 9px;
+}
+
+.form-control {
+    font-size: 14px;
+    min-height: 40px;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    text-align: right;
+}
+
+.control-label {
+    padding-top: 6px;
+}
+
+.sale-acountpay-pp .sale-acountpay-pp-company {
+    padding: 7px;
+    border: 1px solid transparent;
+}
+
+.sale-acountpay-pp-company-graf-container {
+    border: 2px solid #95cceb;
+    border-radius: 2px;
+    position: relative;
+    background: #fff;
+    width: auto;
+    height: 0;
+    padding-top: 50%;
+}
+
+input[type=checkbox].sale-acountpay-pp-company-checkbox {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+.sale-acountpay-pp-company-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sale-acountpay-pp-company-smalltitle {
+    padding-top: 9px;
+    color: #a3a3a3;
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.btn-default.btn-lg.sale-account-pay-button.btn__blue {
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.simple__text {
+    color: #000;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.simple__text ul {
+    padding-left: 16px;
+}
+
+.simple__text a {
+    font-weight: 700;
+    color: #000c41;
+}
+
+.simple__text img {
+    display: block;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+
+.simple__text img {
+        max-width: 260px
+}
+    }
+
+.simple__bold {
+    font-weight: 700;
 }

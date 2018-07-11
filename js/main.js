@@ -1,7 +1,3 @@
-//Hamburger icon
-
-
-
 $(function() {
 	var
 		classBlock = 'file-input',
@@ -45,10 +41,8 @@ $(function() {
 	$fInput.on( 'focus', function(){ $(this).next().addClass(classFocusInput); });
 	$fInput.on( 'blur', function(){ $(this).next().removeClass(classFocusInput); });
 	/* ========== */
-});
 
-/* Ползунки range */
-$(function () {
+    /* Ползунки range */
     var $slider = $(".range__input"); // Ползунок
 
     $slider.each(function() {
@@ -184,10 +178,10 @@ $(function () {
         }
     });
 
-});
+
 /* ========== */
 
-$(function () {
+
     $(".menu__dropdown").on("click", function () {
         return $(this).toggleClass("submenu__active"), !1
     });
@@ -197,4 +191,38 @@ $(function () {
         $(this).toggleClass("active");
         $('.header__mobile--dropdown').toggleClass("active");
     });
+
+
+    $('.slider').slick({
+        slidesToShow: 5,
+        arrows: true,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 });

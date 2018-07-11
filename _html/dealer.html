@@ -191,62 +191,50 @@
 
 <main class="main">
 
-    <div class="container">
+    <div class="container container__padded">
         <ol class="breadcrumb">
             <li class="breadcrumb__item"><a class="breadcrumb__link" href="/" title="Главная">Главная</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="" title="Статьи">Насадки</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="" title="Статьи">Алмазная</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/" title="Главная">Бренды</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="" title="Статьи">HDFreza</a>
+            </li>
         </ol>
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 ">
-                <div class="h1">
-                    Насадка алмазная 802 001 016 <span>супер тонкая</span>
-                    <div>
-                        <a href="" class="header__personal--comparison">
-                            <div class="header__personal--icon"></div>
-                            <div class="header__personal--text">
-                                Сравнение
-                            </div>
-                        </a>
-                        <a href="" class="header__personal--favourite">
-                            <div class="header__personal--icon"></div>
-                            <div class="header__personal--text">
-                                Избранное
-                            </div>
-                        </a>
+            <div class="col-12 col-md-8 offset-md-2 brand">
+                <img src="../image/img/HDFreza%20Logo.png" alt="" title="" class="brand__image">
+                <div class="simple__texttext">
+                    <div class="h2">
+                        HDFreza
                     </div>
+                    <p>
+                        HDFreza - это результат деятельности известного в ногтевой индустрии дистрибьютора инструментов для
+                        аппартаного маникюра и педикюра Myslitsky-Nail. Коппания работает на рынке с 2010 года и
+                        сотрудничает с известными европейскими, российскими и азиатскими производителями. На основе опыта,
+                        полученного от партнеров, бренд решил выпустить свою линейку качественных фрез для аппаратного
+                        маникюра.
+                    </p>
+                    <p>
+                        В ассортименте компании представлены насадки различных форм и материалов изготовления.
+                        Потребитель может найти необходимый инструмент для любой цели и области применения (маникюр,
+                        педикюр, шлифовка, искусственные ногти и т.д.)
+                    </p>
+                    <div class="h2">
+                        Преимущества бренда:
+                    </div>
+                    <ol class="brand__list">
+                        <li>
+                            Самый большой ассортимент насадок в России.
+                        </li>
+                        <li>
+                            Тестирование и последующий отбор самых качественных насадок.
+                        </li>
+                        <li>
+                            Контрактное размещение эксклюзивных форм насадок на заводах, обеспечивающий наивысшее качество.
+                        </li>
+                    </ol>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 "></div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-12">
-                <div class="h1">
-                    Отзывы (<span>5</span>)
-                </div>
-                <a href="" title="" class="darkblue__link">Написать отзыв</a>
 
-                <div class="review">
-                    <div class="review__image" style="background: url('../image/img/HDFreza Logo.png') no-repeat center/100%;">
-
-                    </div>
-                    <div class="review__body">
-                        <div class="review__date">
-                            19. 06. 2018
-                        </div>
-                        <div class="review__author">
-                            Kissa
-                        </div>
-                        <div class="review__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
-                        </div>
-                    </div>
-                </div>
-                <a href="" title="" class="darkblue__link">Показать все отзывы</a>
-            </div>
-        </div>
 
 
         <div class="slider__wrapper">
@@ -373,7 +361,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="promo__banner"
@@ -399,6 +386,26 @@
     </div>
 
 </main>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!--FOOTER-->
@@ -483,7 +490,6 @@
 <script src="../js/libs.min.js"></script>
 <script src="../js/slick.min.js"></script>
 <script src="../js/main.js"></script>
-
 </body>
 
 </html>

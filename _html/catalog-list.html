@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../image/">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/fontawesome-all.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../build/main.css">
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+<header class="main__header">
+    <div class="header__menu--line">
+        <div class="container">
+            <div class="header__inner row">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <a class="gamburger js-gamburger js-run-event" title="Меню" tabindex="0" role="button" id="gamburger-nav">
+                        <div class="gamburger__line">
+                        </div>
+                    </a>
+                    <a href="" class="header__logo">
+                        <div class="header__logo--svg">
+                        </div>
+                        <div class="header__logo-text">
+                            Товары ногтевого сервиса
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-8 col-md-9 col-lg-9 col-xl-10 header__content">
+                    <div class="row header__underline header__mobile--dropdown">
+                        <div class="col-12 col-lg-3 el__centered">
+                            <div class="header__city">
+                                <div class="header__city--icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="header__city--name">
+                                    Москва
+                                </div>
+                                <div class="header__city--change">
+                                    изменить город
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="header__info">
+                                <div class="header__info--delivery">
+                                    <span>Бесплатная</span> доставка от 2 000 <i class="fas fa-ruble-sign"></i>
+                                </div>
+                                <div class="header__info--menu">
+                                    <div class="header__info--item">
+                                        <a href="" title="Скидки" class="header__info--link">Скидки</a>
+                                    </div>
+                                    <div class="header__info--item">
+                                        <a href="" title="Каталог" class="header__info--link">Каталог</a>
+                                    </div>
+                                    <div class="header__info--item">
+                                        <a href="" title="Прайс-лист" class="header__info--link">Прайс-лист</a>
+                                    </div>
+                                    <div class="header__info--item">
+                                        <a href="" title="Бренды" class="header__info--link">Бренды</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 header__call">
+                            <div class="header__call--icon">
+                                <img src="../image/icons/phone-call.svg" alt="Звонок" title="Позвонить">
+                            </div>
+                            <div class="header__call--info">
+                                <div class="header__phone">
+                                    <a class="header__phone" href="tel:8-800-707-43-25"> 8 (800) 707-43-25</a>
+                                </div>
+                                <div class="header__hours">
+                                    пн-чт 9.00 - 19.00 пт 9.00 - 18.00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-2 header__region">
+                            <div class="header__region--item">
+                                <a href="" title="Русский">
+                                    <img src="../image/icons/russia.svg">
+                                </a>
+                            </div>
+                            <div class="header__region--item">
+                                <a href="" title="English">
+                                    <img src="../image/icons/united-kingdom.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row header__margin">
+                        <div class="col-12 col-sm-8 col-md-5 col-lg-7 el__centered hidden-xs">
+                            <div class="header__search">
+                                <div class="header__search--wrapper">
+                                    <input type="text" input[type=reset]
+                                           placeholder="Введите часть артикула или кода, например 504" name="search"
+                                           class="header__search--field">
+                                    <div class="header__search--dropdown">Все разделы</div>
+                                </div>
+                                <button class="header__search--button"></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 header__personal hidden-sm">
+                            <a href="" class="header__personal--comparison">
+                                <div class="header__personal--icon"></div>
+                                <div class="header__personal--text">
+                                    Сравнение
+                                </div>
+                            </a>
+                            <a href="" class="header__personal--favourite">
+                                <div class="header__personal--icon"></div>
+                                <div class="header__personal--text">
+                                    Избранное
+                                </div>
+                            </a>
+                            <a href="" class="header__personal--auth">
+                                <div class="header__personal--icon"></div>
+                                <div class="header__personal--text">
+                                    Войти
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-3 col-lg-2 el__centered">
+                            <a href="" class="header__cart">
+                                <div class="header__cart--icon">
+                                </div>
+                                <div class="header__cart--info">
+                                    <div class="header__cart--goods">
+                                        <div class="header__cart--quantity"><span>3</span> товара</div>
+                                        <div class="header__cart--summary">на сумму <span class="header__cart--summ">1970</span>
+                                            рублей
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="header__discount">
+                                <div class="header__discount--personal">Ваша скидка: <span>5%</span></div>
+                                <div class="header__discount--more"><a href="">сэкономить больше</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__catalog">
+            <div class="container">
+                <div class="row header__catalog--row">
+                    <a href="" class="header__catalog--item">
+                        <span><i class="fas fa-bars"></i></span> <span>Все разделы</span>
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Вращающиеся инструменты
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Пилки и полировщики
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Инструменты для маникюра
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Уход за руками и ногами
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Гель лаки
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Дизайн ногтей
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Наращивание ногтей
+                    </a>
+                    <a href="" class="header__catalog--item">
+                        Оборудование
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER END -->
+
+<main class="main">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/" title="Главная">Главная</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="" title="Статьи">Вращающийся инструмент</a>
+            </li>
+        </ol>
+        <div class="h1">
+            Насадки твердосплавные
+        </div>
+        <div class="row articles__row">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="filter__wrapper">
+                    <div class="filter-section selected">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a class="menu__link" href="/"><span>Цена <span class="item-quantity">(руб.)</span></span></a>
+                                <div class="menu__dropdown submenu__active"><i class="fas fa-chevron-down"></i></div>
+                                <div class="submenu">
+                                    <div class="range">
+                                        <div class="range__wrapper">
+                                            <label class="range__label" for="range_1">от</label>
+                                            <input class="range__prev" type="text" value="0" id="range_1">
+                                            <label class="range__label" for="range_2">до</label>
+                                            <input class="range__next" type="text" value="1000" id="range_2">
+                                        </div>
+                                        <div class="range__input"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="/"><span>Страна <span class="item-quantity">(2)</span></span></a>
+                                <div class="menu__dropdown"><i class="fas fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="/"><span>Страна</span></a>
+                                <div class="menu__dropdown"><i class="fas fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="/"><span>Страна</span></a>
+                                <div class="menu__dropdown"><i class="fas fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="/"><span>Страна</span></a>
+                                <div class="menu__dropdown"><i class="fas fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                    <li class="checkbox__wrapper">
+                                        <input type="checkbox" name="arrFilter_141_1446436389" id="11" class="css-checkbox">
+                                        <label for="11" class="css-label lite-orange-check">Бельгия</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 col-lg-9">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 sort__wrapper">
+                        <div class="sort__wrapper">
+                            <div>Сортировать по:</div>
+                            <div class="sort active">цене</div>
+                            <div class="sort">коду</div>
+                            <div class="sort">отзывам</div>
+                        </div>
+                        <div class="sort__wrapper">
+                            <div class="sort"><i class="fas fa-th-large"></i></div>
+                            <div class="sort active"><i class="fas fa-list-ul"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 fastbuy__wrapper">
+                        <div class="fastbuy fastbuy__list">
+                            <a href="" class="catalog__item">
+                                <div class="catalog__item--image" style="background: url('../image/img/catalog.jpg') no-repeat center center;background-size: 100%;">
+                                    <div class="catalog__item--brand" style="background: url('../image/img/article.jpg') no-repeat center center;background-size: cover;"></div>
+                                    <div class="catalog__item--country" style="background: url('../image/icons/united-kingdom.svg') no-repeat center center;background-size: cover;"></div>
+                                </div>
+                                <div class="catalog__item--info">
+                                    <div class="catalog__item--favourite not-favourite"></div>
+                                    <div class="catalog__item--prices">от <span>89</span> до <span>117</span> <i class="fas fa-ruble-sign"></i></div>
+                                </div>
+                            </a>
+                            <div class="fastbuy__item">
+                                <div class="fastbuy__item--header">
+                                    Насадка алмазная 805 704 603 <span class="item--type">грубая</span>
+                                </div>
+                                <div class="fastbuy__item--info">
+                                    <div class="fastbuy__item--brand">
+                                        Бренды: <span class="fastbuy-span">HDFREZA</span>
+                                    </div>
+                                    <div class="fastbuy__item--country">
+                                        Страны: <span class="fastbuy-span">Германия</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__list--text">
+                                    Фреза представляет собой специальное маникюрное приспособление с усеченным конусом и алмазным напылением со средней зернистостью, рекомендована для аппаратного маникюра и педикюра.
+                                </div>
+                                <div class="catalog__item--prices">от <span>89</span> до <span>117</span> <i class="fas fa-ruble-sign"></i></div>
+                                <div class="fastbuy__item--quantity">
+                                    <div class="quantity-btn quantity-minus"><i class="fas fa-minus"></i></div>
+                                    <input class="quantity" name="quantity" id="quantity" placeholder="2 шт."/>
+                                    <label for="quantity"></label>
+                                    <div class="quantity-btn quantity-plus"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <a href="" class="btn btn__blue">
+                                    В корзину
+                                </a>
+                                <a href="" class="btn fastbuy__button">
+                                    Быстрый заказ
+                                </a>
+                            </div>
+                            <div class="fastbuy__table">
+                                <div class="h1">
+                                    Быстрая покупка
+                                </div>
+                                <div class="small__text">
+                                    Цена зависит от количества товара и от суммы заказа
+                                </div>
+                                <table class="catalog__table">
+                                    <tbody>
+                                        <tr>
+                                            <th rowspan="2">Количество,<br> шт.</th>
+                                            <th colspan="4">Общая сумма заказа, <i class="fas fa-ruble-sign"></i>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>от 1 000</td>
+                                            <td>от 10 000</td>
+                                            <td>от 25 000</td>
+                                            <td>от 50 000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>от 1</td>
+                                            <td>от 1 000</td>
+                                            <td>от 10 000</td>
+                                            <td>от 25 000</td>
+                                            <td>от 50 000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>от 1</td>
+                                            <td>от 1 000</td>
+                                            <td>от 10 000</td>
+                                            <td>от 25 000</td>
+                                            <td>от 50 000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>от 1</td>
+                                            <td>от 1 000</td>
+                                            <td>от 10 000</td>
+                                            <td>от 25 000</td>
+                                            <td>от 50 000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="pagination__wrapper" aria-label="Постраничная навигация">
+            <ul class="pagination">
+                <li class="pagination__item">
+                    <a class="pagination__link" href="" title="Предыдущая страница">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="" title="Страница 17">1</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link active" href="" title="Страница 17">2</a>
+                </li>
+                <li class="pagination__item" title="Текущая страница">
+                    <a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="" title="Страница 17">4</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="" title="Страница 17">5</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="" title="Страница 11">...</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="" title="Страница 17">10</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="" title="Страница 18">11</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="" title="Следующая страница">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="promo__banner"
+         style="background: url('../image/img/manicure.jpg') no-repeat center;background-size: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-7">
+                    <div class="h1">
+                        Подпишитесь на наши новости об акциях и <span class="red">промо-кодах</span>
+                    </div>
+                    <div class="promo__banner--politic">
+                        Подписываясь, вы соглашаетесь с использованием персональных данных в соответствии с <a href="">политикой конфиденциальности</a>.
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div class="newsletter__input">
+                        <input type="text" input[type=reset] placeholder="Введите e-mail" name="mail" class="main__input">
+                        <a href="" class="main__input--button">Подписаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+<!--FOOTER-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 footer__item">
+                <a href="" class="footer__item--head">Меню</a>
+                <a href="" class="footer__item--link">О нас</a>
+                <a href="" class="footer__item--link">Новости</a>
+                <a href="" class="footer__item--link">Статьи</a>
+                <a href="" class="footer__item--link">Безопасность платежей</a>
+                <a href="" class="footer__item--link">Как получить скидку</a>
+                <a href="" class="footer__item--link">Тарифы доставки</a>
+                <a href="" class="footer__item--link">Контакты</a>
+                <a href="" class="footer__item--link">Пункты выдачи</a>
+                <a href="" class="footer__item--link">Мобильная версия</a>
+                <a href="" class="footer__item--link">Оплата и доставка: инструкции</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 footer__item">
+                <a href="" class="footer__item--head">Каталог</a>
+                <a href="" class="footer__item--link">Вращающиеся инструменты</a>
+                <a href="" class="footer__item--link">Пилки и полировщики</a>
+                <a href="" class="footer__item--link">Инструменты для маникюра</a>
+                <a href="" class="footer__item--link">Уход за руками и ногами</a>
+                <a href="" class="footer__item--link">Гель лаки</a>
+                <a href="" class="footer__item--link">Дизайн ногтей</a>
+                <a href="" class="footer__item--link">Наращивание ногтей</a>
+                <a href="" class="footer__item--link">Оборудование</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 footer__item">
+                <a href="" class="footer__item--head">Клиентам</a>
+                <a href="" class="footer__item--link">Бесплатная доставка</a>
+                <a href="" class="footer__item--link">Гарантия качества</a>
+                <a href="" class="footer__item--link">Возврат товара</a>
+                <a href="" class="footer__item--link">Часто задаваемые вопросы</a>
+                <a href="" class="footer__item--link">Пользовательское соглашение</a>
+                <a href="" class="footer__item--link">Учебным центрам</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 footer__item">
+                <a href="" class="footer__item--head">Обратная связь</a>
+                <a href class="footer__item--button">
+                    <span class="footer__item--icon"></span>
+                    <span class="footer__item--text">Написать директору</span>
+                </a>
+                <div class="footer__socials">
+                    <a href="" class="footer__socials--youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="" class="footer__socials--instagram"><?xml version="1.0" encoding="iso-8859-1"?>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="footer__socials--vk"><?xml version="1.0" encoding="iso-8859-1"?>
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="" class="footer__socials--odnoklassniki"><?xml version="1.0" encoding="iso-8859-1"?>
+                        <i class="fab fa-odnoklassniki"></i>
+                    </a>
+                    <a href="" class="footer__socials--facebook"><?xml version="1.0" encoding="iso-8859-1"?>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row footer__bottom">
+                <div class="footer__bottom--rights">
+                    Myslitsky-Nail все права защищены
+                </div>
+                <div class="footer__bottom--copyrights">
+                    © 2018 myslitsky-nail.ru
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--FOOTER END-->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/libs.min.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>

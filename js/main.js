@@ -1,63 +1,18 @@
-$(function() {
-	var
-		classBlock = 'file-input',
-		$fInput = $('.' + classBlock + '__input'), // Выборка всех инпутов типа файл
-		fInputClass = classBlock + '__input', // Класс инпута типа файл
-		classFocusInput = classBlock + '__label_focus', // Класс, добавляющий стили при фокусе (для FF)
-		fSelected = classBlock + '_selected', // Класс инпута с выбранным файлом
-		$fReset = $('.' + classBlock + '__reset'); // Крестики для удаления добавленного файла
+function generateSliders() {
+    var $slider = $(document).find(".range__input"); // Ползунок
 
-	// Обработка добавления файла
-	$fInput.on('change', function() {
-		var
-			$this = $(this),
-			fId = $this.attr('id'), // ID текущего инпута
-			$fLabel = $('label[for=' + fId + ']'), // Label, привязанный к текущему input
-			value = $this.val(); // Путь добавленного файла
-
-		if (!value) return; // Если нажали "отмена"
-
-		$fLabel.text(value.slice(value.lastIndexOf('\\') + 1)); // Отображение названия файла
-		$this.parent().addClass(fSelected);
-	});
-
-	// Обработка удаления файла
-	$fReset.on('click', function() {
-		var
-			$this = $(this),
-			$inpWrap = $this.parent(), // Текущий контейнер инпута
-			$input = $inpWrap.find('.' + fInputClass), // Текущий инпут
-			fId = $input.attr('id'), // ID текущего инпута
-			$fLabel = $('label[for=' + fId + ']'); // Label, привязанный к текущему инпуту
-
-		if (!$input.parent().hasClass(fSelected)) return; // Выбираем только с файлом
-
-		$input.val('');
-		$inpWrap.removeClass(fSelected);
-		$fLabel.text('Выбрать файл');
-	});
-
-	// Обработка фокуса на Firefox
-	$fInput.on( 'focus', function(){ $(this).next().addClass(classFocusInput); });
-	$fInput.on( 'blur', function(){ $(this).next().removeClass(classFocusInput); });
-	/* ========== */
-
-    /* Ползунки range */
-    var $slider = $(".range__input"); // Ползунок
-
-    $slider.each(function() {
+    $slider.each(function () {
         var
             $this = $(this), // Текущий элемент
-            slMin = $("#range_1"), // Поле с минимальным значением
-            slMax = $("#range_2"), // Поле с максимальным значением
-            slMinVal = parseInt(slMin.val()), // Значение поля min
-            slMaxVal = parseInt(slMax.val()) // Значение поля max
+            slMin = $(this).parent().find(".range__prev"), // Поле с минимальным значением
+            slMax = $(this).parent().find(".range__next"), // Поле с максимальным значением
+            slMinVal = parseInt((slMin.data('limit')) ? slMin.data('limit') : slMin.val()), // Значение поля min
+            slMaxVal = parseInt((slMax.data('limit')) ? slMax.data('limit') : slMax.val()) // Значение поля max
         ;
-
         $this.slider({ // Инициализация ползунка
             min: slMinVal,
             max: slMaxVal,
-            values: [slMinVal, slMaxVal],
+            values: [slMin.val(), slMax.val()],
             range: true,
             create: function () {
                 changeInput();
@@ -103,11 +58,11 @@ $(function() {
             changeInput();
         });
 
-        $(window).on('resize', function() { // Обработка ресайза страницы
+        $(window).on('resize', function () { // Обработка ресайза страницы
             changeInput();
         });
 
-        $(slMin).on('keydown', function(e) { // Добавление работы стрелок вверх / вниз для min
+        $(slMin).on('keydown', function (e) { // Добавление работы стрелок вверх / вниз для min
             if (e.keyCode != 38 && e.keyCode != 40) return;
 
             var
@@ -133,7 +88,7 @@ $(function() {
             changeInput();
         });
 
-        $(slMax).on('keydown', function(e) { // Добавление работы стрелок вверх / вниз для max
+        $(slMax).on('keydown', function (e) { // Добавление работы стрелок вверх / вниз для max
             if (e.keyCode != 38 && e.keyCode != 40) return;
 
             var
@@ -177,17 +132,63 @@ $(function() {
             slMax.css('width', maxWidth);
         }
     });
+}
+$(function() {
+	var
+		classBlock = 'file-input',
+		$fInput = $('.' + classBlock + '__input'), // Выборка всех инпутов типа файл
+		fInputClass = classBlock + '__input', // Класс инпута типа файл
+		classFocusInput = classBlock + '__label_focus', // Класс, добавляющий стили при фокусе (для FF)
+		fSelected = classBlock + '_selected', // Класс инпута с выбранным файлом
+		$fReset = $('.' + classBlock + '__reset'); // Крестики для удаления добавленного файла
 
+	// Обработка добавления файла
+	$fInput.on('change', function() {
+		var
+			$this = $(this),
+			fId = $this.attr('id'), // ID текущего инпута
+			$fLabel = $('label[for=' + fId + ']'), // Label, привязанный к текущему input
+			value = $this.val(); // Путь добавленного файла
 
+		if (!value) return; // Если нажали "отмена"
+
+		$fLabel.text(value.slice(value.lastIndexOf('\\') + 1)); // Отображение названия файла
+		$this.parent().addClass(fSelected);
+	});
+
+	// Обработка удаления файла
+	$fReset.on('click', function() {
+		var
+			$this = $(this),
+			$inpWrap = $this.parent(), // Текущий контейнер инпута
+			$input = $inpWrap.find('.' + fInputClass), // Текущий инпут
+			fId = $input.attr('id'), // ID текущего инпута
+			$fLabel = $('label[for=' + fId + ']'); // Label, привязанный к текущему инпуту
+
+		if (!$input.parent().hasClass(fSelected)) return; // Выбираем только с файлом
+
+		$input.val('');
+		$inpWrap.removeClass(fSelected);
+		$fLabel.text('Выбрать файл');
+	});
+
+	// Обработка фокуса на Firefox
+	$fInput.on( 'focus', function(){ $(this).next().addClass(classFocusInput); });
+	$fInput.on( 'blur', function(){ $(this).next().removeClass(classFocusInput); });
+	/* ========== */
+
+    /* Ползунки range */
+
+    generateSliders();
 /* ========== */
 
 
-    $(".menu__dropdown").on("click", function () {
+    $(document).on("click", ".menu__dropdown", function () {
         return $(this).toggleClass("submenu__active"), !1
     });
 
 
-    $('#gamburger-nav').click( function () {
+    $(document).on('click', '#gamburger-nav', function () {
         $(this).toggleClass("active");
         $('.header__mobile--dropdown').toggleClass("active");
     });
@@ -223,6 +224,24 @@ $(function() {
                 }
             }
         ]
+    });
+
+    $('.gallery__picture').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.gallery__list'
+    });
+    $('.gallery__list').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.gallery__picture',
+        dots: false,
+        arrows: true,
+        vertical: true,
+        centerMode: false,
+        focusOnSelect: true
     });
 
 });
